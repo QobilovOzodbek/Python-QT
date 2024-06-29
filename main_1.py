@@ -1,9 +1,12 @@
 import sys
 from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 def window():
     app = QtWidgets.QApplication(sys.argv)
     win = QtWidgets.QMainWindow()
+    win.setGeometry(950,300,500,500)
+    win.setWindowTitle("Ozodbek Qobilov")
     win.show()
     sys.exit(app.exec_())
     
